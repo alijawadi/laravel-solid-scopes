@@ -1,0 +1,19 @@
+{
+    "name": "alijawadi/solid-scopes",
+    "description": "Separate single responsibility class for scopes.",
+    "autoload": {
+        "psr-4": {
+            "Alijawadi\\SolidScopes\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ali Jawadi",
+            "email": "alijatdev@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    }
+}
