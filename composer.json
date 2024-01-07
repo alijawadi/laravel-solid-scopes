@@ -15,8 +15,8 @@
   ],
   "require": {
     "php": "^8.0",
-    "illuminate/support": "*",
-    "illuminate/database": "*"
+    "illuminate/support": "^10.39",
+    "illuminate/database": "^10.0"
   },
   "minimum-stability": "dev",
   "prefer-stable": true
