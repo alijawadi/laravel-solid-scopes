@@ -1,23 +1,17 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Alijawadi\SolidScopes;
 
-use App\Filter\FilterBuilder;
 use Illuminate\Database\Eloquent\Builder;
 
-trait HasFilter
+trait HasSolidScope
 {
     public function scopeFilterBy($query, $filters): Builder
     {
-        $filter = new FilterBuilder($query, $filters, $this->getName());
+        $filter = new ScopeBuilder($query, $filters, $this::class);
 
         return $filter->apply();
-    }
-
-    private function getName(): ?string
-    {
-        $path = explode('\\', $this::class);
-
-        return array_pop($path);
     }
 }
