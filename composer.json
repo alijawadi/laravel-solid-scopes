@@ -17,8 +17,18 @@
     "php": "^8.2",
     "illuminate/support": "^10.39",
     "illuminate/database": "^10.0",
-    "illuminate/console": "^10.39"
+    "illuminate/console": "^10.39",
+    "eventsauce/object-hydrator": "^1.4"
   },
   "minimum-stability": "dev",
-  "prefer-stable": true
+  "prefer-stable": true,
+  "require-dev": {
+    "pestphp/pest": "^2.30",
+    "orchestra/testbench": "^8.19"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
 }
